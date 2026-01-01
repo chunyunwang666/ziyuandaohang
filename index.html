@@ -306,10 +306,10 @@
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme === 'dark') {
             body.classList.add('dark-mode');
-            themeToggle.textContent = '张嘉浩';
+            themeToggle.textContent = '🌞';
         } else if (!savedTheme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             body.classList.add('dark-mode');
-            themeToggle.textContent = '张嘉浩';
+            themeToggle.textContent = '🌞';
         } else {
             themeToggle.textContent = '🌙';
         }
@@ -319,7 +319,7 @@
             
             if (body.classList.contains('dark-mode')) {
                 localStorage.setItem('theme', 'dark');
-                themeToggle.textContent = '张嘉浩';
+                themeToggle.textContent = '🌞';
             } else {
                 localStorage.setItem('theme', 'light');
                 themeToggle.textContent = '🌙';
@@ -330,7 +330,7 @@
             if (!localStorage.getItem('theme')) {
                 if (e.matches) {
                     body.classList.add('dark-mode');
-                    themeToggle.textContent = '张嘉浩';
+                    themeToggle.textContent = '🌞';
                 } else {
                     body.classList.remove('dark-mode');
                     themeToggle.textContent = '🌙';
